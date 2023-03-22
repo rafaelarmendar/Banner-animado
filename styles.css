@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 38, 38);
+}
+
+.container{
+    min-height: 400px;
+    display: flex;
+}
+
+.item{
+    padding: 1rem;
+    flex-grow: 1;
+    border: 2px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex-grow 0.2s;
+}
+
+.item:hover{
+    flex-grow: 10;
+}
+
+.item:hover .banner_title{
+    transform: rotate(0);
+}
+
+
+
+.container div:nth-child(1){
+    background-color: rgb(191, 145, 234);
+}
+.container div:nth-child(2){
+    background-color: darkcyan;
+}
+.container div:nth-child(3){
+    background-color: darksalmon;
+}
+.container div:nth-child(4){
+    background-color: lightgreen;
+}
+
+.banner_title{
+    margin: 0;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    transition: transform 0.2s 0.2s;
+}
+
+
